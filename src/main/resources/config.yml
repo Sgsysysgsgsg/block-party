@@ -1,0 +1,19 @@
+world:
+  name: blockparty
+arena:
+  size: 17
+  y: 80
+  min-players: 2
+  max-players: 16
+game:
+  countdown: 10
+  round-seconds: 5
+  minimum-round-seconds: 1
+  speed-up-after: 3
+  restore-delay-ticks: 20
+  colors: [RED_WOOL, BLUE_WOOL, GREEN_WOOL, YELLOW_WOOL, ORANGE_WOOL, PURPLE_WOOL, PINK_WOOL, LIGHT_BLUE_WOOL]
+rewards:
+  2-4: 100
+  5-8: 250
+  9-12: 500
+  13-16: 1000
