@@ -1,0 +1,14 @@
+name: NeverBlockParty
+version: 1.0.0
+main: me.never.blockparty.NeverBlockParty
+api-version: '1.21'
+softdepend: [Vault]
+commands:
+  blockparty:
+    aliases: [bp]
+    description: Join and manage Block Party
+permissions:
+  neverblockparty.admin:
+    default: op
+  neverblockparty.play:
+    default: true
