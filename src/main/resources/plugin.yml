@@ -6,7 +6,7 @@ softdepend: [Vault]
 commands:
   blockparty:
     aliases: [bp]
-    description: Block Party
+    description: NeverBlockParty commands
 permissions:
   neverblockparty.admin:
     default: op
