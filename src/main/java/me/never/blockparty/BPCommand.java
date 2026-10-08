@@ -1,0 +1,3 @@
+package me.never.blockparty;
+import org.bukkit.command.*;import org.bukkit.entity.Player;
+public final class BPCommand implements CommandExecutor{final Game g;BPCommand(Game g){this.g=g;}public boolean onCommand(CommandSender s,Command c,String l,String[] a){if(!(s instanceof Player p))return true;String x=a.length==0?"join":a[0];if(x.equalsIgnoreCase("join"))g.join(p);else if(x.equalsIgnoreCase("leave"))g.leave(p);else if(x.equalsIgnoreCase("start")&&p.hasPermission("neverblockparty.admin"))g.start();else if(x.equalsIgnoreCase("stop")&&p.hasPermission("neverblockparty.admin"))g.stop();else p.sendMessage("§b/bp join §7| §b/bp leave §7| §b/bp start §7| §b/bp stop");return true;}}
